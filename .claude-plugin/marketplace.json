@@ -1,0 +1,13 @@
+{
+  "name": "filerelay-marketplace",
+  "description": "FileRelay plugins for secure file handoffs.",
+  "owner": {
+    "name": "FileRelay"
+  },
+  "plugins": [
+    {
+      "name": "filerelay",
+      "source": "./"
+    }
+  ]
+}

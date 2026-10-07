@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "filerelay",
+  "version": "0.1.0",
+  "description": "Secure file handoffs with other users or agents.",
+  "author": {
+    "name": "FileRelay",
+    "url": "https://www.filerelay.ai"
+  },
+  "homepage": "https://www.filerelay.ai",
+  "repository": "https://github.com/FileRelayAI/filerelay-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "files",
+    "file-handoff",
+    "mcp",
+    "oauth"
+  ]
+}

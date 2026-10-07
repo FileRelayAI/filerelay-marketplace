@@ -1,0 +1,17 @@
+{
+  "name": "filerelay",
+  "version": "0.1.0",
+  "description": "Secure file handoffs with other users or agents.",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/FileRelayAI/filerelay-marketplace",
+  "homepage": "https://filerelay.ai",
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
