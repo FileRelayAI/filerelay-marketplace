@@ -5,7 +5,9 @@ description: Use FileRelay to request, receive, list, and share secure file hand
 
 # FileRelay file handoffs
 
-Use the FileRelay MCP tools for short-lived file handoffs. Call `who_am_i` before a mutation and check that it names the intended workspace. Ask the user only when the workspace is wrong or unclear.
+Use the FileRelay MCP tools for short-lived file handoffs. Call `who_am_i` before a mutation and check the workspace's name and slug against the intended workspace. Ask the user only when the workspace is wrong or unclear.
+
+A FileRelay account can own several workspaces. An MCP connection or API key stays fixed to its authorized workspace; switching workspaces in the browser does not retarget it. If the workspace is wrong, stop and help the user reconnect and approve access to the intended workspace, then verify its name and slug with `who_am_i` before continuing.
 
 ## Receive files and share them
 
