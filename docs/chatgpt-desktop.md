@@ -20,7 +20,9 @@ Repository reading alone does not activate FileRelay tools. Confirm that install
 
 Help the user follow the FileRelay account connection prompt. The user signs in on FileRelay, checks the workspace and permissions, and approves access.
 
-Use `who_am_i` to confirm the connected workspace before creating an upload request or issuing a download link. If it names the wrong workspace, stop and help the user reconnect to the intended account.
+Use `who_am_i` to confirm the connected workspace's name and slug before creating an upload request or issuing a download link. One FileRelay account can own several workspaces. If the connection names the wrong workspace, stop and help the user reconnect and approve access to the intended workspace; a different account is not required. Check the workspace shown on the FileRelay consent page before approving, then verify the new connection with `who_am_i`.
+
+Switching workspaces in the FileRelay dashboard does not retarget an existing MCP connection or API key. To use another workspace, establish a connection authorized for that workspace.
 
 If account connection fails, report that the FileRelay connection is not ready. Keep user setup limited to installation, sign-in, and approval of workspace access. Do not claim that a connected account exists until an authenticated tool call succeeds.
 
